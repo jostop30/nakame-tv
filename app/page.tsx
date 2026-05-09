@@ -11,7 +11,7 @@ export default function Home() {
     const [favorites, setFavorites] = useState([]);
     const [selectedAnime, setSelectedAnime] = useState(null);
     const [watchingEpisode, setWatchingEpisode] = useState(null);
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState<any>(null);
 
     useEffect(() => {
         const saved = localStorage.getItem('nakame_favs');
